@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="profile-info-row">
+        
+  <div class="nav">
+    <ul>
+      <a routerLink="/dashboard">
+        <div class="nav-option-wrapper">
+          <div
+            class="inactive"
+            (click)="clickEvent(1)"
+            [ngClass]="currentIndex === 1 ? 'active' : 'inactive'"
+          >
+
+            <label>
+              Dashboard
+            </label>
+          </div>
+        </div>
+      </a>
+      <a routerLink="/dashboard/orders">
+        <div class="nav-option-wrapper">
+          <div
+            class="inactive"
+            (click)="clickEvent(2)"
+            [ngClass]="currentIndex === 2 ? 'active' : 'inactive'"
+          >
+
+            <label>
+              Orders
+            </label>
+          </div>
+        </div>
+      </a>
+      <a routerLink="/dashboard/settings">
+        <div class="nav-option-wrapper">
+          <div
+            class="inactive"
+            (click)="clickEvent(3)"
+            [ngClass]="currentIndex === 3 ? 'active' : 'inactive'"
+          >
+
+            <label>
+              Settings
+            </label>
+          </div>
+        </div>
+      </a>
+    </ul>
+  </div>
+
+
+  <div class='bottom'>
+   
+  </div>
+</div>
+</div>

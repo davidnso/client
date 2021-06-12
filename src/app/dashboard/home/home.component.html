@@ -1,0 +1,57 @@
+<div class="account-info">
+    <div style="width: 100%; margin-top: 20px">
+        <h3 class='heading'>Products</h3>
+    </div> 
+    <hr/>
+
+    <div class="home-flex-container">
+        <div> 
+            <div style="display: table;">
+                <a href='/dashboard/builder'>
+
+                <button class="create-option" mat-stroked-button >
+                    Add Products
+                  </button>
+                </a> 
+
+            </div>
+            <div class="fade-in-div" style="margin-top: 50px;">
+              <div *ngIf="products !== null; else noOrdersBlock">
+               <div *ngFor="let product of products;let i = index">
+                <div (click)="navigateToEdit(i)" style="padding: 10px">
+                  <!-- <app-expandable-list-item-unlinked class="slide-left-fade" [item]="hub"></app-expandable-list-item-unlinked> -->
+
+                </div>
+             
+              </div>
+              </div>
+              <ng-template #noOrdersBlock>
+                
+                <div *ngIf="!isLoading; else ordersloading" class="content-container">
+                  <div class="content">
+                    <div style="color: rgb(142, 58, 190);">
+                    </div>
+                    <h2>Hey! It looks like you don't have any products</h2>
+                    <span class="buttonRow">
+                      <a href="/builder"
+                        ><button class="create-option" mat-stroked-button color="primary">
+                          Add products
+                        </button></a
+                      >
+                    </span>
+                  </div>
+                </div>
+                <ng-template #ordersloading>
+                  <div style="width: 90%;">
+                    <app-loader></app-loader>
+                  </div> 
+                </ng-template>
+              </ng-template>
+            </div>
+        </div>
+        <div>
+            The other side
+        </div>
+
+    </div>
+</div>

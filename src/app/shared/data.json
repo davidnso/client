@@ -1,0 +1,23 @@
+{
+    "dashboardItem": {
+        "name": "DNA XI HOODIE",
+        "images": [
+        ],
+        "quantity": {
+            "small": 10,
+            "medium": 10,
+            "large": 20,
+            "xlarge": 20
+        },
+        "storeName": "DNA",
+        "storeId": null,
+        "category": "clothing",
+        "subcategory": "t-shirt",
+        "gender": "mens"
+    },
+    "metrics": {
+        "ytd": "200.31",
+        "currentMonth": "10.00",
+        "today": "00.00"
+    }
+}

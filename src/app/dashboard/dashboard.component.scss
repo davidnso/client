@@ -1,0 +1,29 @@
+.profile-info-row{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    // justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+}
+
+@media(max-width: 750px){ 
+    .profile-info-row{ 
+      flex-direction: column;
+    }
+    .profile-wrapper{ 
+      width: auto;
+      min-height: auto;
+      border:none;
+      &.mobile{
+        background-color: transparent;
+        margin-top: 100px;
+      }
+    }
+    .account-info{
+      width: 90%;
+    }
+
+ 
+  }
